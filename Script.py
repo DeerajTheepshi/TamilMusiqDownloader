@@ -4,9 +4,10 @@ import shlex
 import subprocess
 import os
 import string
+import sys
 
 title = "Kanaa"
-url = "http://tamilmusiq.net/Movie/Kanaa"
+url = sys.argv[1]
 head = {'User-Agent': 'Mozilla/5.0'}
 req = urllib.request.Request(url,headers=head)
 response = urllib.request.urlopen(req)
